@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="Attendance system pipeline: camera, detection, embedding, matching, local buffer, outbound sync">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8B949E"/></marker><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#171C24" stroke-width="1"/></pattern></defs>
+<rect width="1200" height="360" fill="#0D1117"/><rect width="1200" height="360" fill="url(#g)"/>
+<rect x="20" y="40" width="185" height="112" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+<text x="112.5" y="72" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">RTSP camera</text>
+<text x="112.5" y="98" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">entry, optional exit</text>
+<rect x="215" y="40" width="185" height="112" rx="10" fill="#1B2340" stroke="#6E8BFF" stroke-width="2.5"/>
+<text x="307.5" y="72" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Detect</text>
+<text x="307.5" y="98" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">YOLOv11n-face</text>
+<rect x="410" y="40" width="185" height="112" rx="10" fill="#1B2340" stroke="#6E8BFF" stroke-width="2.5"/>
+<text x="502.5" y="72" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Embed</text>
+<text x="502.5" y="98" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">ArcFace R50,</text>
+<text x="502.5" y="120" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">512-dim</text>
+<rect x="605" y="40" width="185" height="112" rx="10" fill="#1B2340" stroke="#6E8BFF" stroke-width="2.5"/>
+<text x="697.5" y="72" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Match</text>
+<text x="697.5" y="98" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">cosine search,</text>
+<text x="697.5" y="120" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">FAISS in RAM</text>
+<rect x="800" y="40" width="185" height="112" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+<text x="892.5" y="72" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Local buffer</text>
+<text x="892.5" y="98" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">SQLite, temporary</text>
+<rect x="995" y="40" width="185" height="112" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+<text x="1087.5" y="72" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Outbound sync</text>
+<text x="1087.5" y="98" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">HTTPS POST to the</text>
+<text x="1087.5" y="120" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">client system</text>
+<line x1="205" y1="96" x2="215" y2="96" stroke="#8B949E" stroke-width="2" marker-end="url(#a)"/>
+<line x1="400" y1="96" x2="410" y2="96" stroke="#8B949E" stroke-width="2" marker-end="url(#a)"/>
+<line x1="595" y1="96" x2="605" y2="96" stroke="#8B949E" stroke-width="2" marker-end="url(#a)"/>
+<line x1="790" y1="96" x2="800" y2="96" stroke="#8B949E" stroke-width="2" marker-end="url(#a)"/>
+<line x1="985" y1="96" x2="995" y2="96" stroke="#8B949E" stroke-width="2" marker-end="url(#a)"/>
+<text x="20" y="215" text-anchor="start" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="20" fill="#E6EDF3">Headless workers; the integration is outbound-only.</text>
+<text x="20" y="248" text-anchor="start" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">Events are deleted from the local database after a successful sync: it is a buffer, not a history.</text>
+<text x="20" y="278" text-anchor="start" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">Delivered as one archive: unzip, edit .env, run. Only the NVIDIA driver is needed on the machine.</text>
+</svg>

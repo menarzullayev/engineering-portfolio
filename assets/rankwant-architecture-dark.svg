@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-label="RankWant today: one host, a default network and an internal judge network">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8B949E"/></marker><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#171C24" stroke-width="1"/></pattern></defs>
+<rect width="1200" height="520" fill="#0D1117"/><rect width="1200" height="520" fill="url(#g)"/>
+<rect x="40" y="24" width="300" height="96" rx="10" fill="#1B2340" stroke="#6E8BFF" stroke-width="2.5"/>
+<text x="190.0" y="56" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Web</text>
+<text x="190.0" y="82" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">Next.js, React 19, SSR</text>
+<text x="190.0" y="104" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">10 locales</text>
+<rect x="450" y="24" width="330" height="96" rx="10" fill="#1B2340" stroke="#6E8BFF" stroke-width="2.5"/>
+<text x="615.0" y="56" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">API</text>
+<text x="615.0" y="82" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">Django 5.2 LTS + DRF</text>
+<text x="615.0" y="104" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">REST /api/v1, OpenAPI</text>
+<rect x="890" y="24" width="270" height="96" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+<text x="1025.0" y="56" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Worker</text>
+<text x="1025.0" y="82" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">Celery: results,</text>
+<text x="1025.0" y="104" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">rejudge, ratings</text>
+<line x1="340" y1="72" x2="450" y2="72" stroke="#8B949E" stroke-width="2" marker-end="url(#a)"/>
+<text x="403.0" y="66.0" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="15" fill="#8B949E">REST</text>
+<line x1="780" y1="72" x2="890" y2="72" stroke="#8B949E" stroke-width="2" marker-end="url(#a)"/>
+<rect x="40" y="190" width="250" height="90" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+<text x="165.0" y="222" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">PostgreSQL</text>
+<text x="165.0" y="248" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">metadata, standings</text>
+<rect x="340" y="190" width="250" height="90" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+<text x="465.0" y="222" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Redis</text>
+<text x="465.0" y="248" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">session, Celery</text>
+<rect x="640" y="190" width="250" height="90" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+<text x="765.0" y="222" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">MinIO (S3)</text>
+<text x="765.0" y="248" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">statements, test data</text>
+<rect x="940" y="190" width="220" height="90" rx="10" fill="#1B2340" stroke="#6E8BFF" stroke-width="2.5"/>
+<text x="1050.0" y="222" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">judge-queue</text>
+<text x="1050.0" y="248" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">separate Redis</text>
+<line x1="560" y1="120" x2="165" y2="190" stroke="#8B949E" stroke-width="2" marker-end="url(#a)"/>
+<line x1="615" y1="120" x2="465" y2="190" stroke="#8B949E" stroke-width="2" marker-end="url(#a)"/>
+<line x1="680" y1="120" x2="765" y2="190" stroke="#8B949E" stroke-width="2" marker-end="url(#a)"/>
+<line x1="1000" y1="120" x2="1050" y2="190" stroke="#8B949E" stroke-width="2" marker-end="url(#a)"/>
+<rect x="40" y="320" width="1120" height="180" rx="12" fill="none" stroke="#E3B341" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="56" y="346" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" font-weight="700" fill="#E3B341">judge-net (internal: true): no route to the internet or to postgres:5432 and api:8000</text>
+<rect x="70" y="356" width="400" height="86" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+<text x="270.0" y="388" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">judge (Go + nsjail)</text>
+<text x="270.0" y="414" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">pulls jobs, no DATABASE_URL</text>
+<rect x="500" y="356" width="300" height="86" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+<text x="650.0" y="388" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Preflight</text>
+<text x="650.0" y="414" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">connects to postgres/api;</text>
+<text x="650.0" y="436" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">success = exit 1</text>
+<rect x="830" y="356" width="300" height="86" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+<text x="980.0" y="388" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">judge-ro (MinIO user)</text>
+<text x="980.0" y="414" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">read-only on test data</text>
+<line x1="1050" y1="280" x2="1050" y2="320" stroke="#8B949E" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#a)"/>
+<text x="1058.0" y="294.0" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="15" fill="#8B949E">queue</text>
+<text x="70" y="478" text-anchor="start" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="16" fill="#B4BDC9">Measured gap that led here (2026-09-24): from the judge, postgres:5432 and 1.1.1.1:443 were open.</text>
+</svg>
