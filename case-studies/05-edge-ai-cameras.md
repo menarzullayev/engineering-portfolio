@@ -39,7 +39,15 @@ The figure on this page is a count of devices that sent at least one request to 
 - **Source:** my own account as the author. No public document backs it, and I have not measured the alternative (server-side inference), so the cost reasoning is not a number I can show.
 - **What it costs:** every model must fit the camera's accelerator and be converted to its binary format, which is the model-conversion work above. A model that does not convert cleanly cannot ship.
 
+### Write the firmware in C++17, built with CMake
+
+- **Decision:** the on-camera firmware is C++17 and is built with CMake.
+- **Why (as I understand it):** three reasons. The vendor toolchain for the CV25 expects it, so another language is not a realistic option. The camera has limited memory and CPU and the detection and tracking loop is real-time, which favours a language with manual memory control and low overhead. C++17 specifically, not a newer standard, because the camera toolchain's compiler supports up to that level.
+- **Whose decision and when:** inherited. It was already in place before I joined (internship started September 2025). I did not choose it and I have no design document to cite.
+- **Source:** my own account as the author. I have not compared it against another language on this hardware.
+- **What it costs:** I cannot use language features newer than C++17, and the build has to follow what the vendor toolchain accepts.
+
 ## What is not done on this page
 
-- Only one decision is listed so far. More will be added only when I can state each with a date and a source.
+- Only two decisions are listed so far. More will be added only when I can state each with a date and a source.
 - The number above is a snapshot. The fleet changes daily; this page does not.
