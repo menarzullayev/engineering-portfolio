@@ -55,7 +55,15 @@ The figure on this page is a count of devices that sent at least one request to 
 - **Source:** my own account as the author. I do not publish the size of the differences the check finds (see the accuracy point above).
 - **What it costs:** a model that the toolchain cannot convert cannot ship, however good it is in ONNX. Calibration needs a representative image set, and a poor set gives a worse model.
 
+### Measure fleet state from what devices actually send, hour by hour
+
+- **Decision:** the fleet is measured from the requests devices send to the platform, one clock hour at a time, not from the list of registered devices. In an hour a camera is online if at least one request arrived, and offline if none did. Hours with no requests are split further when the camera's own logs show it was running and only could not upload (no connection, camera running), and restarts are marked separately. The 7-day device count on this page uses the same idea: a device counts if it sent at least one request in the window.
+- **Why:** the purpose is to see problem states in the cameras: which ones go silent, which restart or lose the network, and for how long. A registry list cannot show that, and a plain online/offline flag hides the difference between a camera that stopped and a camera that kept working but could not upload.
+- **Whose decision and when:** made together with a colleague, as part of an internal fleet-monitoring tool. I do not have a date I can cite.
+- **Source:** my own account as the author, and the internal tool's own user guide, which is private and cannot be linked here.
+- **What it costs:** "online" only means a request arrived, not that the camera did useful work. The view covers only cameras on recent firmware, so it is a subset of the fleet, and hours use server time, not the camera's clock.
+
 ## What is not done on this page
 
-- Only three decisions are listed so far. More will be added only when I can state each with a date and a source.
+- Only four decisions are listed so far. More will be added only when I can state each with a date and a source.
 - The number above is a snapshot. The fleet changes daily; this page does not.
