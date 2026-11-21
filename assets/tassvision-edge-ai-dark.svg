@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-label="Edge-AI cameras: model conversion, camera firmware, fleet requests and fleet analytics">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8B949E"/></marker><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#171C24" stroke-width="1"/></pattern></defs>
+<rect width="1200" height="380" fill="#0D1117"/><rect width="1200" height="380" fill="url(#g)"/>
+<rect x="20" y="40" width="250" height="112" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+<text x="145.0" y="72" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">ONNX model</text>
+<text x="145.0" y="98" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">face recognition,</text>
+<text x="145.0" y="120" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">other models</text>
+<rect x="330" y="40" width="270" height="112" rx="10" fill="#1B2340" stroke="#6E8BFF" stroke-width="2.5"/>
+<text x="465.0" y="72" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Model conversion</text>
+<text x="465.0" y="98" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">CNNGen to the camera's</text>
+<text x="465.0" y="120" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">binary format</text>
+<rect x="660" y="40" width="250" height="112" rx="10" fill="#1B2340" stroke="#6E8BFF" stroke-width="2.5"/>
+<text x="785.0" y="72" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Camera firmware</text>
+<text x="785.0" y="98" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">C++17 on Ambarella CV25</text>
+<rect x="970" y="40" width="210" height="112" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+<text x="1075.0" y="72" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Platform</text>
+<text x="1075.0" y="98" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">devices send</text>
+<text x="1075.0" y="120" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">requests</text>
+<line x1="270" y1="96" x2="330" y2="96" stroke="#8B949E" stroke-width="2" marker-end="url(#a)"/>
+<line x1="600" y1="96" x2="660" y2="96" stroke="#8B949E" stroke-width="2" marker-end="url(#a)"/>
+<line x1="910" y1="96" x2="970" y2="96" stroke="#8B949E" stroke-width="2" marker-end="url(#a)"/>
+<rect x="660" y="220" width="250" height="90" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+<text x="785.0" y="252" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Camera events</text>
+<text x="785.0" y="278" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">detection, tracking,</text>
+<text x="785.0" y="300" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">line crossing</text>
+<line x1="785" y1="152" x2="785" y2="220" stroke="#8B949E" stroke-width="2" marker-end="url(#a)"/>
+<rect x="970" y="220" width="210" height="90" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+<text x="1075.0" y="252" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="22" font-weight="700" fill="#E6EDF3">Fleet analytics</text>
+<text x="1075.0" y="278" text-anchor="middle" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">TypeScript, ClickHouse</text>
+<line x1="1075" y1="152" x2="1075" y2="220" stroke="#8B949E" stroke-width="2" marker-end="url(#a)"/>
+<text x="20" y="235" text-anchor="start" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="20" fill="#E6EDF3">Private employer work: only the shape of the system is shown.</text>
+<text x="20" y="268" text-anchor="start" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">About 1,950 devices were live in the 7 days</text>
+<text x="20" y="292" text-anchor="start" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">before 2026-11-06, counted from the fleet's request</text>
+<text x="20" y="316" text-anchor="start" font-family="Segoe UI, system-ui, -apple-system, Arial, sans-serif" font-size="17" fill="#B4BDC9">logs (live = sent a request inside the window).</text>
+</svg>

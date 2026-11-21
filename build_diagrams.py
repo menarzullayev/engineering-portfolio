@@ -153,12 +153,33 @@ def project_alpha(t):
     return s.svg()
 
 
+def tassvision(t):
+    s = Canvas(t, 1200, 380, "Edge-AI cameras: model conversion, camera firmware, fleet requests and fleet analytics")
+    s.box(20, 40, 250, 112, "ONNX model", ("face recognition,", "other models"))
+    s.box(330, 40, 270, 112, "Model conversion", ("CNNGen to the camera's", "binary format"), "accent")
+    s.box(660, 40, 250, 112, "Camera firmware", ("C++17 on Ambarella CV25",), "accent")
+    s.box(970, 40, 210, 112, "Platform", ("devices send", "requests"))
+    s.arrow(270, 96, 330, 96)
+    s.arrow(600, 96, 660, 96)
+    s.arrow(910, 96, 970, 96)
+    s.box(660, 220, 250, 90, "Camera events", ("detection, tracking,", "line crossing"))
+    s.arrow(785, 152, 785, 220)
+    s.box(970, 220, 210, 90, "Fleet analytics", ("TypeScript, ClickHouse",))
+    s.arrow(1075, 152, 1075, 220)
+    s.note(20, 235, "Private employer work: only the shape of the system is shown.", size=20, color=s.c["ink"])
+    s.note(20, 268, "About 1,950 devices were live in the 7 days")
+    s.note(20, 292, "before 2026-11-06, counted from the fleet's request")
+    s.note(20, 316, "logs (live = sent a request inside the window).")
+    return s.svg()
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     made = 0
     for t in T:
         for name, fn in (("rankwant-architecture", rankwant), ("tg-solver-pipeline", tg_solver),
-                         ("attendance-pipeline", attendance), ("project-alpha-stages", project_alpha)):
+                         ("attendance-pipeline", attendance), ("project-alpha-stages", project_alpha),
+                         ("tassvision-edge-ai", tassvision)):
             (OUT / f"{name}-{t}.svg").write_text(fn(t), encoding="utf-8")
             made += 1
     print(f"{made} diagrams -> {OUT}")
