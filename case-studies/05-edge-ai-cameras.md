@@ -47,7 +47,15 @@ The figure on this page is a count of devices that sent at least one request to 
 - **Source:** my own account as the author. I have not compared it against another language on this hardware.
 - **What it costs:** I cannot use language features newer than C++17, and the build has to follow what the vendor toolchain accepts.
 
+### Convert models with the vendor toolchain only, quantised with calibration, and check the result
+
+- **Decision:** a model goes from ONNX to the camera's binary format through the vendor's CNNGen toolchain and nothing else. It is quantised (INT8) using a calibration set, and the converted model's output is checked against the original ONNX before it is used.
+- **Why (as I understand it):** the camera's accelerator only loads the vendor's format, so there is no second route to compare. Quantisation is needed to run on the accelerator, and calibration is what keeps the quantised model close to the original. The check exists because a conversion can finish without errors and still change the model's behaviour.
+- **Whose decision and when:** inherited. The process was already in place before I joined (internship started September 2025). I follow it and I have no design document to cite.
+- **Source:** my own account as the author. I do not publish the size of the differences the check finds (see the accuracy point above).
+- **What it costs:** a model that the toolchain cannot convert cannot ship, however good it is in ONNX. Calibration needs a representative image set, and a poor set gives a worse model.
+
 ## What is not done on this page
 
-- Only two decisions are listed so far. More will be added only when I can state each with a date and a source.
+- Only three decisions are listed so far. More will be added only when I can state each with a date and a source.
 - The number above is a snapshot. The fleet changes daily; this page does not.
