@@ -29,7 +29,17 @@ The figure on this page is a count of devices that sent at least one request to 
 - Customer names, store names, addresses or any footage.
 - Internal tooling, repository names and the vendor's toolchain files (they are licensed, not mine).
 
+## Decisions
+
+### Run detection and tracking on the camera, keep fleet analysis on the server
+
+- **Decision:** detection, tracking and line-crossing events run on the camera's accelerator. The server receives events and request data, and fleet analysis happens there.
+- **Why (as I understand it):** two reasons. Latency and traffic: sending every video stream to a server costs bandwidth and adds delay, while an event is a few bytes. Cost at scale: with about 1,950 devices active in a week, running every stream through server-side models would need far more compute than the cameras' own accelerators, which are already paid for.
+- **Whose decision and when:** inherited architecture. It was in place before I joined (internship started September 2025), so I did not make it. I work inside it and I know its reasons from the team, not from a design document I can cite.
+- **Source:** my own account as the author. No public document backs it, and I have not measured the alternative (server-side inference), so the cost reasoning is not a number I can show.
+- **What it costs:** every model must fit the camera's accelerator and be converted to its binary format, which is the model-conversion work above. A model that does not convert cleanly cannot ship.
+
 ## What is not done on this page
 
-- No decisions with their reasons are listed here yet. Those are the heart of the other case studies and I will add them only when I can state each one with a date and a source.
+- Only one decision is listed so far. More will be added only when I can state each with a date and a source.
 - The number above is a snapshot. The fleet changes daily; this page does not.
